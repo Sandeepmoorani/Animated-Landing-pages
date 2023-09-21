@@ -1,86 +1,149 @@
-*{
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-
-}
-html,body{
+* {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
     height: 100%;
     width: 100%;
 }
-#main{
+
+#main {
     height: 100%;
     width: 100%;
-    background-color: rgb(175, 111, 133);
+    /* background-color: aquamarine; */
     display: flex;
+
 }
-#part1{
+
+#left {
     height: 100%;
-    width: 26%;
+    width: 40%;
+    position: relative;
     /* background-color: red; */
-
-
-}
-#part2{
-    height: 100%;
-    width: 67%;
-    background-color: blue;
-    background-image: url(https://images.unsplash.com/photo-1562572159-4efc207f5aff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    /* float: left; */
 
 }
-#overlay{
-    height: 100%;
+
+#lnav {
+
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    justify-content: space-between;
 
+    display: flex;
+
+    padding: 20px 30px;
 }
-#part3{
-    height: 100%;
-    width: 7%;
-    /* background-color: green; */
 
-
-}
-#text_div{
-    height: 250px;
-    width: 330px;
-    position: absolute;
-    /* background-color: salmon; */
-    left: 9%;
-    top: 55%;
-    transform: translate(0,-50%);
-    color: whitesmoke;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    line-height: 50px;
+#lnavr a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
     font-size: 20px;
+    font-weight: bold;
+
+
+
 }
-#small_image{
-    height: 400px;
-    width: 300px;
-    position: absolute;
-    background-color: salmon;
-    background-image: url(https://images.unsplash.com/photo-1541823709867-1b206113eafd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80);
+
+#right {
+    height: 100%;
+    width: 60%;
+    background-color: blue;
+    /* float: right; */
+}
+
+#rtop {
+    height: 50%;
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+
+}
+
+#rbottom {
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=844&q=80);
     background-size: cover;
     background-position: center;
 
-   
-    right: 5%;
-    top: 55%;
-    transform: translate(0,-50%);
-    /* border-radius: 50%;
-    border: 2px solid white; */
+
 
 }
-#overlay1{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-     }
 
+#rtopleft {
+    height: 100%;
+    width: 50%;
+    /* background-color: black; */
+    background-image: url(https://images.unsplash.com/photo-1560607162-26b0344e6943?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+#rtopright {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#left #textcentre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#left #textcentre h1 {
+    font-size: 50px;
+    font-weight: bold;
+
+
+}
+
+#left #textcentre p {
+    opacity: 0.7;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+#left #textcentre a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+
+
+}
+
+@media(max-width: 500px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #main #left {
+        width: 100%;
+        height: 50%;
+    }
+
+    #main #right {
+        width: 100%;
+        height: 50%;
+    }
+
+}
