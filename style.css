@@ -71,3 +71,63 @@ html,body{
     background-color: crimson;
     color: white;
 }
+.main h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+
+}
+img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+}
+#img1{
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+#img4{
+    transform: translate(-50%,-50%) rotate(-3deg);
+}
+.bleft{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 2px solid rgba(21, 23, 23, 0.382);
+    font-size: 17px;
+    font-weight: 500;
+    background-color: white;
+    
+   
+}
+.bright{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    font-size: 20px;
+}
+.bright i{
+    color: rgba(7, 10, 28, 0.567);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
