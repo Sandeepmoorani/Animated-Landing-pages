@@ -1,34 +1,73 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    /* font-family: "averta cy w10"; */
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-html, body {
-    width: 100%;
+html,body{
     height: 100%;
+    width: 100%;
+
 }
-/* .box{
-    height: 500px;
-    width: 500px;
-    background: #000000;
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(250, 235, 215, 0.13);
 }
-.inner{
-    height: 50vh;
-    width: 50vw;
+.navbar{
+    height: 100px;
+    width: 100%;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h3{
+    color: rgba(7, 10, 28, 0.567);
+    font-size: 30px;
+    font-weight: 600;
+    border: 2px solid rgba(21, 23, 23, 0.382);
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+.logo i{
+    color: rgba(7, 10, 28, 0.567);
+    font-size: 30px;
+    font-weight: 600;
+    border: 2px solid rgba(21, 23, 23, 0.382);
+    padding: 5px 10px;
+    border-radius: 50px;
+
+}
+.navcenter h2{
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.navleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.navleft button{
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 2px solid rgba(21, 23, 23, 0.382);
+    font-size: 17px;
+    font-weight: 500;
+    background-color: white;
+    
+}
+#b2{
     background-color: crimson;
-} */
-/* h1{
-   height: 7vmax;
-} */
-.box{
-    height: 200px;
-    width: 200px;
-    background-color: crimson;
-}
-@media (max-width:600px){
-    .box{
-        background-color: aqua;
-    }
+    color: white;
 }
