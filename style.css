@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -12,18 +11,98 @@ body {
 
 }
 
- .container {
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(199, 231, 195), rgba(182, 171, 171, 0.088)), url(https://images.unsplash.com/photo-1487700160041-babef9c3cb55?q=80&w=1152&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 200px;
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: #3498db;
-    color: white;
+.form {
+    width: 90%;
+    max-width: 450px;
+    min-width: 350px;
+    background: white;
+    padding: 55px;
     text-align: center;
-    line-height: 100px;
-} 
+    border-radius: 10px;
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.form .underline {
+    height: 4px;
+    width: 30px;
+    background: #333;
+    margin: 10px auto 40px auto;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.inputfield {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+.inputfield input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    /* margin-left: 10px; */
+    padding: 18px 15px;
+}
+
+.inputfield i {
+    /* font-size: 1.5rem; */
+    color: #999;
+    margin-left: 10px;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn button {
+    padding: 15px 0;
+    width: 48%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.5s;
+    outline: 0;
+    border: 0;
+    background: #a7ee74;
+}
+
+.inputgroup {
+    height: 280px;
+}
+
+button.disable {
+    background: #eaeaea;
+    color: #555;
+    /* cursor: not-allowed; */
+}
