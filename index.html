@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Sign up </title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-</head>
+    <title>Eduor</title>
 
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- accordion css -->
+    <link rel="stylesheet" href="./accordion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- courses crousel css -->
+  <link rel="stylesheet" href="./crousel2.css">
+  <!-- blog and news css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./blog.css">
+    <!-- contact css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./contact.css">
+    <!-- footer -->
+    <link rel="stylesheet" href="./footer.css">
+</head>
 <body>
-    <div class="container">
-        <div class="form">
-            <h1 class="title">Sign Up</h1>
-            <div class="underline"> </div>
-            <form action="">
-                <div class="inputgroup">
-                    <div class="inputfield namefield">
-                        <i class="ri-user-3-fill"></i>
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="inputfield">
-                        <i class="ri-mail-add-line"></i>
-                        <input type="email" placeholder="email">
-                    </div>
-                    <div class="inputfield">
-                        <i class="ri-lock-2-line"></i>
-                        <input type="password" placeholder="password">
-                    </div>
-                </div>
-                <div class="btn">
-                    <button type="button" class="signup">Sign Up</button>
-                    <button type="button" class="disable signin">Sign In</button>
-                </div>
-            </form>
+    <!-- navbar start-->
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html"><img src="footer_logo.png" alt="logo" class="logo"></a>
+            <ul class="nav-list">
+                <li class="nav-items"><a href="#" class="tcolor">Home</a></li>
+                <li class="nav-items"><a href="#" class="tcolor">About Us</a></li>
+                <li class="nav-items"><a href="#" class="tcolor">Courses</a></li>
+                <li class="nav-items"><a href="#" class="tcolor">Blog</a></li>
+                <li class="nav-items"><a href="#" class="tcolor">Pages</a></li>
+                <li class="nav-items"><a href="#" class="tcolor">Contact Us</a></li>
+                <li class="nav-items"><a href="#" class="highlight">Learn More</a></li>
+            </ul>
+
+            <!-- hamburger -->
+            <div class="hamburger">
+                <ion-icon name="menu-outline" class="mobile-navbar-icon"></ion-icon>
+                <ion-icon name="close-outline" class="mobile-navbar-icon"></ion-icon>
+            </div>
         </div>
     </div>
+    <!-- nabar end -->
 
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+    <!-- home section start -->
+    <section class="home-section" id="home">
+        <div class="home-container">
+            <div class="content">
+                <h5>Welcome to our school!</h5>
+                <h2>Students for <span>Little</span> Education from.</h2>
+                <p class="para">Our agency can only be as strong as our people & because of team have designed game changing products.</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="image">
+                <img src="banner_bg.ae2bd141.jpg" alt="Home image">
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
